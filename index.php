@@ -9,9 +9,9 @@
     <body onLoad="check_frame()" oncontextmenu="return false;">
 
 <?php 
-include 'elupdate.tk/data/header.php';
-include 'elupdate.tk/data/translate.php';
-include 'elupdate.tk/data/ip.php';
+include 'https://elupdate.tk/data/header.php';
+include 'https://elupdate.tk/data/translate.php';
+include 'https://elupdate.tk/data/ip.php';
 ?>
 
                 var br = document.createElement("br");
